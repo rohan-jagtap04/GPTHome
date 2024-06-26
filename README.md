@@ -6,4 +6,4 @@ Use this local app to access your OpenAI needs instead.
 
 Simply log in and start typing away.
 
-Check out the code [here](https://github.com/rohan-jagtap04/GPTHome/edit/main).
+Check out the code [here](https://github.com/rohan-jagtap04/GPTHome).
