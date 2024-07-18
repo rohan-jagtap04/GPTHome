@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162406FF9C6E4D193466F0AC /* libPods-GPTHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2702F0BB2D59AA49A3769CD /* libPods-GPTHome.a */; };
+		5FCEC6FEC6B6E1D5AC7281E0 /* libPods-GPTHome-GPTHomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1F5B24A92BBFBCF4D9C170 /* libPods-GPTHome-GPTHomeUITests.a */; };
+		839B7E4E2C33133500C6922E /* GPTHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B7E4D2C33133500C6922E /* GPTHomeApp.swift */; };
+		839B7E502C33133500C6922E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B7E4F2C33133500C6922E /* ContentView.swift */; };
+		839B7E522C33133600C6922E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B7E512C33133600C6922E /* Assets.xcassets */; };
+		839B7E552C33133600C6922E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B7E542C33133600C6922E /* Preview Assets.xcassets */; };
+		839B7E602C33133600C6922E /* GPTHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B7E5F2C33133600C6922E /* GPTHomeTests.swift */; };
+		839B7E6A2C33133600C6922E /* GPTHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B7E692C33133600C6922E /* GPTHomeUITests.swift */; };
+		839B7E6C2C33133600C6922E /* GPTHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B7E6B2C33133600C6922E /* GPTHomeUITestsLaunchTests.swift */; };
+		839B7E7A2C33155300C6922E /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 839B7E792C33155300C6922E /* OpenAISwift */; };
+		839B7E7D2C33192200C6922E /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 839B7E7C2C33192200C6922E /* OpenAI */; };
+		E857C21B03C71DFF2EE6DBB8 /* libPods-GPTHomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB0352396B48A84C0AE6820 /* libPods-GPTHomeTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839B7E5C2C33133600C6922E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839B7E422C33133500C6922E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839B7E492C33133500C6922E;
+			remoteInfo = GPTHome;
+		};
+		839B7E662C33133600C6922E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839B7E422C33133500C6922E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839B7E492C33133500C6922E;
+			remoteInfo = GPTHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B0462FF3D97545E8F208073 /* Pods-GPTHome-GPTHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHome-GPTHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-GPTHome-GPTHomeUITests/Pods-GPTHome-GPTHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		504B0A7025E0736C56377270 /* Pods-GPTHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHome.debug.xcconfig"; path = "Target Support Files/Pods-GPTHome/Pods-GPTHome.debug.xcconfig"; sourceTree = "<group>"; };
+		6AC6C98264ADF0E6B52C72F4 /* Pods-GPTHome-GPTHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHome-GPTHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-GPTHome-GPTHomeUITests/Pods-GPTHome-GPTHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		727CF5772F3B7287BC199C9A /* Pods-GPTHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHomeTests.release.xcconfig"; path = "Target Support Files/Pods-GPTHomeTests/Pods-GPTHomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		839B7E4A2C33133500C6922E /* GPTHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPTHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		839B7E4D2C33133500C6922E /* GPTHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTHomeApp.swift; sourceTree = "<group>"; };
+		839B7E4F2C33133500C6922E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		839B7E512C33133600C6922E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		839B7E542C33133600C6922E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		839B7E562C33133600C6922E /* GPTHome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPTHome.entitlements; sourceTree = "<group>"; };
+		839B7E5B2C33133600C6922E /* GPTHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839B7E5F2C33133600C6922E /* GPTHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTHomeTests.swift; sourceTree = "<group>"; };
+		839B7E652C33133600C6922E /* GPTHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839B7E692C33133600C6922E /* GPTHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTHomeUITests.swift; sourceTree = "<group>"; };
+		839B7E6B2C33133600C6922E /* GPTHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF70C16953FD9B8A1530FE56 /* Pods-GPTHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-GPTHomeTests/Pods-GPTHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC1F5B24A92BBFBCF4D9C170 /* libPods-GPTHome-GPTHomeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPTHome-GPTHomeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2702F0BB2D59AA49A3769CD /* libPods-GPTHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPTHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6603C896F888EABD844E8DD /* Pods-GPTHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTHome.release.xcconfig"; path = "Target Support Files/Pods-GPTHome/Pods-GPTHome.release.xcconfig"; sourceTree = "<group>"; };
+		FDB0352396B48A84C0AE6820 /* libPods-GPTHomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPTHomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839B7E472C33133500C6922E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B7E7D2C33192200C6922E /* OpenAI in Frameworks */,
+				839B7E7A2C33155300C6922E /* OpenAISwift in Frameworks */,
+				162406FF9C6E4D193466F0AC /* libPods-GPTHome.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E582C33133600C6922E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E857C21B03C71DFF2EE6DBB8 /* libPods-GPTHomeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E622C33133600C6922E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCEC6FEC6B6E1D5AC7281E0 /* libPods-GPTHome-GPTHomeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41FABBF5116147EE46F826FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2702F0BB2D59AA49A3769CD /* libPods-GPTHome.a */,
+				CC1F5B24A92BBFBCF4D9C170 /* libPods-GPTHome-GPTHomeUITests.a */,
+				FDB0352396B48A84C0AE6820 /* libPods-GPTHomeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		839B7E412C33133500C6922E = {
+			isa = PBXGroup;
+			children = (
+				839B7E4C2C33133500C6922E /* GPTHome */,
+				839B7E5E2C33133600C6922E /* GPTHomeTests */,
+				839B7E682C33133600C6922E /* GPTHomeUITests */,
+				839B7E4B2C33133500C6922E /* Products */,
+				DF04FB023E5AD6CD4DD65B1E /* Pods */,
+				41FABBF5116147EE46F826FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		839B7E4B2C33133500C6922E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839B7E4A2C33133500C6922E /* GPTHome.app */,
+				839B7E5B2C33133600C6922E /* GPTHomeTests.xctest */,
+				839B7E652C33133600C6922E /* GPTHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839B7E4C2C33133500C6922E /* GPTHome */ = {
+			isa = PBXGroup;
+			children = (
+				839B7E4D2C33133500C6922E /* GPTHomeApp.swift */,
+				839B7E4F2C33133500C6922E /* ContentView.swift */,
+				839B7E512C33133600C6922E /* Assets.xcassets */,
+				839B7E562C33133600C6922E /* GPTHome.entitlements */,
+				839B7E532C33133600C6922E /* Preview Content */,
+			);
+			path = GPTHome;
+			sourceTree = "<group>";
+		};
+		839B7E532C33133600C6922E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				839B7E542C33133600C6922E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		839B7E5E2C33133600C6922E /* GPTHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				839B7E5F2C33133600C6922E /* GPTHomeTests.swift */,
+			);
+			path = GPTHomeTests;
+			sourceTree = "<group>";
+		};
+		839B7E682C33133600C6922E /* GPTHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				839B7E692C33133600C6922E /* GPTHomeUITests.swift */,
+				839B7E6B2C33133600C6922E /* GPTHomeUITestsLaunchTests.swift */,
+			);
+			path = GPTHomeUITests;
+			sourceTree = "<group>";
+		};
+		DF04FB023E5AD6CD4DD65B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				504B0A7025E0736C56377270 /* Pods-GPTHome.debug.xcconfig */,
+				D6603C896F888EABD844E8DD /* Pods-GPTHome.release.xcconfig */,
+				6AC6C98264ADF0E6B52C72F4 /* Pods-GPTHome-GPTHomeUITests.debug.xcconfig */,
+				1B0462FF3D97545E8F208073 /* Pods-GPTHome-GPTHomeUITests.release.xcconfig */,
+				AF70C16953FD9B8A1530FE56 /* Pods-GPTHomeTests.debug.xcconfig */,
+				727CF5772F3B7287BC199C9A /* Pods-GPTHomeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839B7E492C33133500C6922E /* GPTHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839B7E6F2C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHome" */;
+			buildPhases = (
+				959ACC77FE36B0806AFFBE4B /* [CP] Check Pods Manifest.lock */,
+				839B7E462C33133500C6922E /* Sources */,
+				839B7E472C33133500C6922E /* Frameworks */,
+				839B7E482C33133500C6922E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPTHome;
+			packageProductDependencies = (
+				839B7E792C33155300C6922E /* OpenAISwift */,
+				839B7E7C2C33192200C6922E /* OpenAI */,
+			);
+			productName = GPTHome;
+			productReference = 839B7E4A2C33133500C6922E /* GPTHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		839B7E5A2C33133600C6922E /* GPTHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839B7E722C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHomeTests" */;
+			buildPhases = (
+				06C9C7116C59D61306A4530E /* [CP] Check Pods Manifest.lock */,
+				839B7E572C33133600C6922E /* Sources */,
+				839B7E582C33133600C6922E /* Frameworks */,
+				839B7E592C33133600C6922E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839B7E5D2C33133600C6922E /* PBXTargetDependency */,
+			);
+			name = GPTHomeTests;
+			productName = GPTHomeTests;
+			productReference = 839B7E5B2C33133600C6922E /* GPTHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		839B7E642C33133600C6922E /* GPTHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839B7E752C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHomeUITests" */;
+			buildPhases = (
+				7036E2E45A68355A300914FF /* [CP] Check Pods Manifest.lock */,
+				839B7E612C33133600C6922E /* Sources */,
+				839B7E622C33133600C6922E /* Frameworks */,
+				839B7E632C33133600C6922E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839B7E672C33133600C6922E /* PBXTargetDependency */,
+			);
+			name = GPTHomeUITests;
+			productName = GPTHomeUITests;
+			productReference = 839B7E652C33133600C6922E /* GPTHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839B7E422C33133500C6922E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					839B7E492C33133500C6922E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					839B7E5A2C33133600C6922E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 839B7E492C33133500C6922E;
+					};
+					839B7E642C33133600C6922E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 839B7E492C33133500C6922E;
+					};
+				};
+			};
+			buildConfigurationList = 839B7E452C33133500C6922E /* Build configuration list for PBXProject "GPTHome" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 839B7E412C33133500C6922E;
+			packageReferences = (
+				839B7E782C33155300C6922E /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				839B7E7B2C33192200C6922E /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 839B7E4B2C33133500C6922E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839B7E492C33133500C6922E /* GPTHome */,
+				839B7E5A2C33133600C6922E /* GPTHomeTests */,
+				839B7E642C33133600C6922E /* GPTHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839B7E482C33133500C6922E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B7E552C33133600C6922E /* Preview Assets.xcassets in Resources */,
+				839B7E522C33133600C6922E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E592C33133600C6922E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E632C33133600C6922E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C9C7116C59D61306A4530E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPTHomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7036E2E45A68355A300914FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPTHome-GPTHomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959ACC77FE36B0806AFFBE4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPTHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839B7E462C33133500C6922E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B7E502C33133500C6922E /* ContentView.swift in Sources */,
+				839B7E4E2C33133500C6922E /* GPTHomeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E572C33133600C6922E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B7E602C33133600C6922E /* GPTHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839B7E612C33133600C6922E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839B7E6A2C33133600C6922E /* GPTHomeUITests.swift in Sources */,
+				839B7E6C2C33133600C6922E /* GPTHomeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839B7E5D2C33133600C6922E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839B7E492C33133500C6922E /* GPTHome */;
+			targetProxy = 839B7E5C2C33133600C6922E /* PBXContainerItemProxy */;
+		};
+		839B7E672C33133600C6922E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839B7E492C33133500C6922E /* GPTHome */;
+			targetProxy = 839B7E662C33133600C6922E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		839B7E6D2C33133600C6922E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		839B7E6E2C33133600C6922E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		839B7E702C33133600C6922E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504B0A7025E0736C56377270 /* Pods-GPTHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GPTHome/GPTHome.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPTHome/Preview Content\"";
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		839B7E712C33133600C6922E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6603C896F888EABD844E8DD /* Pods-GPTHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GPTHome/GPTHome.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPTHome/Preview Content\"";
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		839B7E732C33133600C6922E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF70C16953FD9B8A1530FE56 /* Pods-GPTHomeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPTHome";
+			};
+			name = Debug;
+		};
+		839B7E742C33133600C6922E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727CF5772F3B7287BC199C9A /* Pods-GPTHomeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPTHome";
+			};
+			name = Release;
+		};
+		839B7E762C33133600C6922E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC6C98264ADF0E6B52C72F4 /* Pods-GPTHome-GPTHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHomeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GPTHome;
+			};
+			name = Debug;
+		};
+		839B7E772C33133600C6922E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0462FF3D97545E8F208073 /* Pods-GPTHome-GPTHomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7MYSAB63G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohan-jagtap.GPTHomeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GPTHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839B7E452C33133500C6922E /* Build configuration list for PBXProject "GPTHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839B7E6D2C33133600C6922E /* Debug */,
+				839B7E6E2C33133600C6922E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839B7E6F2C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839B7E702C33133600C6922E /* Debug */,
+				839B7E712C33133600C6922E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839B7E722C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839B7E732C33133600C6922E /* Debug */,
+				839B7E742C33133600C6922E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839B7E752C33133600C6922E /* Build configuration list for PBXNativeTarget "GPTHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839B7E762C33133600C6922E /* Debug */,
+				839B7E772C33133600C6922E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		839B7E782C33155300C6922E /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		839B7E7B2C33192200C6922E /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		839B7E792C33155300C6922E /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 839B7E782C33155300C6922E /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		839B7E7C2C33192200C6922E /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 839B7E7B2C33192200C6922E /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 839B7E422C33133500C6922E /* Project object */;
+}
